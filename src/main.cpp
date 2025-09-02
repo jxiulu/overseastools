@@ -136,11 +136,6 @@ bool CreateTestFiles(const std::filesystem::path& TestFilesDirectory, int Number
         "道に迷った_5", "もう_一度"
     };
 
-    if (NumberOfTestFiles > 20) {
-        NumberOfTestFiles = 20;
-        std::cerr << "i only have 20 file names";
-    }
-
     if (static_cast<size_t>(NumberOfTestFiles > randomFileNames.size())) {
         std::cout << "i only got about " << randomFileNames.size() << "random names man";
         NumberOfTestFiles = randomFileNames.size();
